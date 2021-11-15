@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="303" Width="371">
+    <Grid Margin="0,0,2,0" HorizontalAlignment="Right" Width="351">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="39*"/>
+        </Grid.RowDefinitions>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="142,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="142,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="53,87,0,0" VerticalAlignment="Top" Height="26" Width="44"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="53,19,0,0" VerticalAlignment="Top" Grid.Row="1" Height="26" Width="51"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="125,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" Grid.Row="1" Text="Вход" TextAlignment="Center"/>
+
     </Grid>
 </Window>
